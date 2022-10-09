@@ -62,14 +62,17 @@ set encoding=UTF-8
 
 
 " TERMINAL "
-nnoremap <silent> <C-t> :100wincmd j<CR> :split<CR> :1wincmd j<CR> :terminal<CR>
+noremap <silent> <C-t> :100wincmd j<CR> :split<CR> :1wincmd j<CR> :terminal<CR>
 
 
 
 " TAG BAR "
 
 " ctags exec source path "
-g:tagbar_ctags_bin = /usr/bin/ctags
+" error define - g:tagbar_ctags_bin=/usr/bin/ctags "
+"set tags=/usr/bin/ctags
+let g:tagbar_ctags_bin='/usr/bin/ctags'
+
 
 " Автостарт плагина для некоторых типов файлов
 "autocmd VimEnter *.c,*.h,*.cpp,*.php,*.s,*.asm TagbarToggle  
@@ -97,7 +100,7 @@ nmap <F8> :TagbarToggle<CR>
 "    Opens (or reopens) the NERDTree if it is not currently visible;
 "    otherwise, the cursor is moved to the already-open NERDTree.
 
-nnoremap <silent> <C-n> :NERDTreeToggle<CR> :NERDTreeFocus<CR>
+noremap <silent> <C-n> :NERDTreeToggle<CR> :NERDTreeFocus<CR>
 
 
 
