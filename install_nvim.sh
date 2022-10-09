@@ -7,7 +7,16 @@ STD_ERR_OUT_FREE=1> /dev/null 2>&1
 NVIM_CONF_PATH=/home/$SUDO_USER/.config
 NVIM_CONF_FILE_NAME=init.vim
 
+UID_ROOT=0
+E_NOTROOT=67
 
+## checking the user permissions 
+if [ "$UID" -ne "$UID_ROOT" ]
+then
+	echo "Permission denied"
+	echo "Failed install"
+	exit $E_NOTROOT
+fi
 
 
 
