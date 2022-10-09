@@ -1,9 +1,9 @@
 #!/bin/bash
 
-FONTS_PATH=~/.fonts
+FONTS_PATH=/home/$SUDO_USER/.fonts
 
 
-DOWNLOAD_PATH=~/Downloads/fonts-downloads/
+DOWNLOAD_PATH=/home/$SUDO_USER/fonts-downloads/
 DOWNLOAD_FILE_NAME=fonts_archive.zip
 WGET_ERRORS_LOG=wget_log.txt
 
@@ -39,6 +39,9 @@ cp ttf/*.ttf "$FONTS_PATH"
 
 echo "Scan all fonts on host..."
 fc-cache -f -v > /dev/null 2>&1
+
+
+chown -hR $SUDO_USER "$FONTS_PATH"
 
 cd ..
 rm -Rf "$DOWNLOAD_PATH"
