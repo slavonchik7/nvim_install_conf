@@ -12,6 +12,7 @@ set mouse=a
 
 call plug#begin()
 
+
 "Plug 'https://github.com/vim-airline/vim-airline'
 "Plug 'https://github.com/preservim/nerdtree'
 "Plug 'https://github.com/tpope/vim-commentary'
@@ -25,23 +26,19 @@ call plug#begin()
 "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'} 
 
+
 "------------------------------------"
+
 Plug 'preservim/tagbar' 
 Plug 'terryma/vim-multiple-cursors'
-"Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'junegunn/vim-plug'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
-"------------------------------------"
 
-"colorschemes
-"Plug 'sickill/vim-monokai'
-"Plug 'morhetz/gruvbox'
-"Plug 'joshdick/onedark.vim'
-"Plug 'rakr/vim-one'
+"------------------------------------"
 
 
 
@@ -56,8 +53,6 @@ set encoding=UTF-8
 
 
 " WINDOWS "
-
-
 
 
 
